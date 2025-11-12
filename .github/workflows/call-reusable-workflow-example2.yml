@@ -73,7 +73,7 @@ jobs:
       run: |
         pip install zest.releaser
         fullrelease --no-input
-        git push
+        #git push
 
   # need to explicitly define pypi release step, as publish to pypi cannot be ran
   # from reusable workflows, follow
