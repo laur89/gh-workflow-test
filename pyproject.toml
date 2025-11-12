@@ -58,8 +58,9 @@ package = true
 
 [tool.zest-releaser]
 extra-message = "[CI SKIP]"
-# push to git remote:
-push-changes = true
+# do not push to git remote:
+push-changes = false
 # do not release to pypi:
 release = false
 history_format = "md"
+
