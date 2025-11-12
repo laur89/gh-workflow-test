@@ -1,3 +1,10 @@
+# test repo to try out gh workflows
+
+Note this repo was originally crated off cookiecutter scaffolding. It's default
+generated Readme follows.
+
+---
+
 # Python Boilerplate
 
 ![PyPI version](https://img.shields.io/pypi/v/python-boilerplate.svg)

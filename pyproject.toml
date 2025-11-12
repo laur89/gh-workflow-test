@@ -1,6 +1,6 @@
 [project]
 name = "py-workflow-test"
-version = "0.0.1"
+version = "0.0.8.dev0"
 description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
 readme = "README.md"
 authors = [
@@ -19,7 +19,7 @@ dependencies = [
 requires-python = ">= 3.10"
 
 [project.optional-dependencies]
-test = [
+dev = [
     "coverage",  # testing
     "pytest",  # testing
     "ruff",  # linting
@@ -55,3 +55,12 @@ select = [
 
 [tool.uv]
 package = true
+
+[tool.zest-releaser]
+extra-message = "[CI SKIP]"
+# do not push to git remote:
+push-changes = true
+# do not release to pypi:
+release = false
+history_format = "md"
+
