@@ -46,10 +46,9 @@ jobs:
       with:
         name: release-dist
         path: dist/
-    - name: Store the distribution packages
-      if: command -v ruff
+    - name: ruff
       run: |
-        echo have ruff
+        command -v ruff >/dev/null && echo have ruff
 
   version-tag-changelog:
     name: Version & tag the release
