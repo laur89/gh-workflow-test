@@ -1,0 +1,25 @@
+# from https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows#example-caller-workflow
+name: Call a reusable workflow
+
+#on:
+  #pull_request:
+    #branches:
+      #- main
+on: [push]
+
+jobs:
+  #call-workflow:
+    #uses: octo-org/example-repo/.github/workflows/workflow-A.yml@v1
+
+  call-workflow-passing-data:
+    permissions:
+      contents: read
+      pull-requests: write
+    #uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
+    uses: laur89/workflows/.github/workflows/reusable-workflow-example.yml@master
+    with:
+      config-path: .github/labeler.yml
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+
+
