@@ -65,7 +65,7 @@ jobs:
       run: |
         #cd ${{ matrix.repo_details.path }}
         #mv $GITHUB_WORKSPACE/${{ vars.SAVING_FILENAME }}.pdf .
-        git config --global user.name 'workflow-bot'
+        git config --global user.name 'laur89'
         git config --global user.email 'ci@github'
         #git add ${{ vars.SAVING_FILENAME }}.pdf
         #git commit -m "Update CV"
