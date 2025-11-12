@@ -46,6 +46,10 @@ jobs:
       with:
         name: release-dist
         path: dist/
+    - name: Store the distribution packages
+      if: command -v ruff
+      run: |
+        echo have ruff
 
   version-tag-changelog:
     name: Version & tag the release
@@ -54,16 +58,16 @@ jobs:
     - build
     runs-on: ubuntu-latest
     #permissions: write-all
-    #permissions:
-      #contents: write
+    permissions:
+      contents: write
 
     steps:
     - uses: actions/checkout@v5
       with:
         persist-credentials: true
-    - name: Add and commit to main
+    - name: Configure git
       run: |
-        git config --global user.name 'laur89'
+        git config --global user.name 'workflow-bot'
         git config --global user.email 'ci@github'
 
     - name: Install zestreleaser & release
