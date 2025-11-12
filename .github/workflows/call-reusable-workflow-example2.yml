@@ -74,6 +74,8 @@ jobs:
     - name: Install zestreleaser & release
       run: |
         pip install zest.releaser
+        git config --global user.name 'laur89'
+        git config --global user.email 'ci@github'
         fullrelease --no-input
         git push
 
