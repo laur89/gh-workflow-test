@@ -6,6 +6,9 @@ name: Call a reusable workflow
     #branches:
       #- main
 on: [push]
+#on:
+  #push:
+    #branches: [ "main", "master" ]
 
 jobs:
   #call-workflow:
