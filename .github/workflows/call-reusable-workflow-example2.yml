@@ -51,8 +51,9 @@ jobs:
     needs:
     - build
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: write-all
+    #permissions:
+      #contents: write
 
     steps:
     - uses: actions/checkout@v5
