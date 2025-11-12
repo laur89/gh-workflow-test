@@ -16,7 +16,7 @@ jobs:
       contents: read
       pull-requests: write
     #uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
-    uses: laur89/workflows/.github/workflows/reusable-workflow-example.yml@master
+    uses: laur89/workflows/.github/workflows/build-publish.yml@master
     with:
       config-path: .github/labeler.yml
     secrets:
