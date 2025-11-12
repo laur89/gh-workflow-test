@@ -16,3 +16,5 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 ## Credits
 
 This package was created with [Cookiecutter](https://github.com/audreyfeldroy/cookiecutter) and the [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) project template.
+
+test repo to try out gh workflows
