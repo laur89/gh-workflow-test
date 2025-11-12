@@ -60,7 +60,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
       with:
-        persist-credentials: false
+        persist-credentials: true
     - name: Add and commit to main
       run: |
         #cd ${{ matrix.repo_details.path }}
