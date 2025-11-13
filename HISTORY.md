@@ -3,7 +3,7 @@
 ## 0.0.5 (unreleased)
 
 
-- Nothing changed yet.
+- yo
 
 
 ## 0.0.4 (2025-11-13)
