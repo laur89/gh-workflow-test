@@ -1,5 +1,11 @@
 # History
 
+## 0.0.6 (unreleased)
+
+
+- Nothing changed yet.
+
+
 ## 0.0.5 (2025-11-13)
 
 
