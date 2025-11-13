@@ -25,7 +25,7 @@ jobs:
       #config-path: .github/labeler.yml
     #secrets:
       #token: ${{ secrets.GITHUB_TOKEN }}
-    secrets: inherit
+    #secrets: inherit
 
 
   # note publish to pypi cannot be ran from reusable workflows, follow
