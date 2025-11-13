@@ -1,6 +1,6 @@
 [project]
 name = "py-workflow-test"
-version = "0.0.4.dev0"
+version = "0.0.4"
 description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
 readme = "README.md"
 authors = [
