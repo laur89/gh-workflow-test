@@ -46,7 +46,7 @@ jobs:
       with:
         name: release-dist
         path: dist/
-    - name: ruff
+    - name: lint
       run: |
         command -v ruff >/dev/null && echo have ruff
 
