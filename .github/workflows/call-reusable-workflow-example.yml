@@ -24,6 +24,8 @@ jobs:
     #secrets:
       #token: ${{ secrets.GITHUB_TOKEN }}
     secrets: inherit
+    permissions:
+      contents: write
 
 
   # note publish to pypi cannot be ran from reusable workflows, follow
